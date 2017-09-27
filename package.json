@@ -11,7 +11,9 @@
     "pack": "electron-packager . unreel --platform=linux --arch=x64; electron-packager . unreel --platform=win32 --arch=x64 --icon='build/icon.ico'; electron-packager . unreel --platform=darwin --icon='build/icon.icns'",
     "build": "build --dir",
     "dist": "build",
-    "dist:win": "build --win"
+    "dist:win": "build --win",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "build": {
     "appId": "pt.softlab.unreel",
@@ -68,6 +70,8 @@
     "fs-extra": "^2.1.2",
     "probe-image-size": "^3.0.0",
     "sanitize-filename": "^1.6.1",
-    "tmp": "0.0.31"
-  }
+    "tmp": "0.0.31",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
