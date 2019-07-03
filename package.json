@@ -71,7 +71,7 @@
     "probe-image-size": "^3.0.0",
     "sanitize-filename": "^1.6.1",
     "tmp": "0.0.31",
-    "snyk": "^1.41.1"
+    "snyk": "^1.189.0"
   },
   "snyk": true
 }
